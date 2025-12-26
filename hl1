@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введи длину ребра r: ");
+        double r = Convert.ToDouble(Console.ReadLine());
+
+        double P = Math.PI;  
+        double S = 4 * P * Math.Pow(r, 6);  
+        double V = (4.0 / 3.0) * P * Math.Pow(r, 3);  
+
+        Console.WriteLine($"Площадь поверхности S = {S}");
+        Console.WriteLine($"Объём V = {V}");
+        Console.ReadKey();
+    }
+}
