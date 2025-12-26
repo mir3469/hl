@@ -1,0 +1,74 @@
+**C# ШПАРГАЛКА: МАТЕМАТИЧЕСКИЕ ВЫЧИСЛЕНИЯ**
+
+**1. ВВОД ДАННЫХ**
+```csharp
+string input = Console.ReadLine(); // Чтение строки
+double num = Convert.ToDouble(input); // Преобразование в число
+```
+
+**2. МАТЕМАТИЧЕСКИЕ ОПЕРАЦИИ**
+```csharp
+double result = Math.Pow(x, 2); // Возведение в степень
+double root = Math.Sqrt(x); // Квадратный корень
+double abs = Math.Abs(x); // Модуль числа
+```
+
+**3. УСЛОВНЫЕ ОПЕРАТОРЫ**
+```csharp
+if (x > 0 && x < 5) // Логическое И
+else if (x <= 0 || x >= 5) // Логическое ИЛИ
+else { }
+```
+
+**4. ЦИКЛЫ ДЛЯ СУММИРОВАНИЯ**
+```csharp
+double sum = 0;
+for (int i = 1; i <= n; i++) // Цикл с параметром
+{
+    sum += expression; // Накопление суммы
+}
+```
+
+**5. МАТЕМАТИЧЕСКИЕ ФУНКЦИИ**
+```csharp
+double sin = Math.Sin(x * Math.PI / 180); // Синус (в радианах)
+double cos = Math.Cos(x); // Косинус
+double pi = Math.PI; // Число π
+```
+
+**6. СРАВНЕНИЕ ДРОБНЫХ ЧИСЕЛ**
+```csharp
+double epsilon = 0.000001;
+if (Math.Abs(a - b) < epsilon) // Сравнение с точностью
+```
+
+**7. МАССИВЫ (если нужно несколько значений)**
+```csharp
+double[] nums = new double[3]; // Объявление массива
+nums[0] = 5.2; // Обращение к элементу
+```
+
+**8. ФОРМАТИРОВАННЫЙ ВЫВОД**
+```csharp
+Console.WriteLine($"Результат: {value:F4}"); // 4 знака после запятой
+```
+
+**9. ОСНОВНЫЕ ПЕРЕМЕННЫЕ**
+```csharp
+int n = 10; // Целое число
+double x = 3.14; // Дробное число
+bool flag = true; // Логическое значение
+```
+
+**10. БАЗОВАЯ СТРУКТУРА ПРОГРАММЫ**
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Ваш код здесь
+    }
+}
+```
