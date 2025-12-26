@@ -1,3 +1,5 @@
+y = {cos^2 x если 0 < x < 2
+1 - sin x^2 если x <= 0 или x >= 2
 using System;
 
 class Program
