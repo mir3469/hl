@@ -1,0 +1,29 @@
+Вычислить расстояние между двумя точками координат 
+d = √((x_2-x))^2 + ((y_2-y_1))^2
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите координаты первой точки:");
+        Console.Write("x1 = ");
+        double x1 = double.Parse(Console.ReadLine());
+        Console.Write("y1 = ");
+        double y1 = double.Parse(Console.ReadLine());
+        
+        Console.WriteLine("\nВведите координаты второй точки:");
+        Console.Write("x2 = ");
+        double x2 = double.Parse(Console.ReadLine());
+        Console.Write("y2 = ");
+        double y2 = double.Parse(Console.ReadLine());
+        
+        // Вычисление расстояния
+        double deltaX = x2 - x1;
+        double deltaY = y2 - y1;
+        double distance = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+        
+        Console.WriteLine($"\nРасстояние между точками: {distance}");
+    }
+}
