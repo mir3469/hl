@@ -1,0 +1,37 @@
+Даны действительные числа х, у и z. Найти среди них наименьшее не используя класс Math.
+
+  using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите три числа:");
+        
+        Console.Write("x = ");
+        double x = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("y = ");
+        double y = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("z = ");
+        double z = Convert.ToDouble(Console.ReadLine());
+        
+        double min;
+        
+        if (x <= y && x <= z)
+        {
+            min = x;
+        }
+        else if (y <= x && y <= z)
+        {
+            min = y;
+        }
+        else
+        {
+            min = z;
+        }
+        
+        Console.WriteLine("Наименьшее число: " + min);
+    }
+}
