@@ -1,0 +1,29 @@
+Дано натуральное число n вычислить значение выражения
+∑_{k=1}^n (2k² - 5)/((k+1)(k + √k))
+
+  
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        
+        double sum = 0; 
+        
+        for (int k = 1; k <= n; k++)
+        {
+            double numerator = 2 * k * k - 5;
+            
+            double sqrtK = Math.Sqrt(k); // √k
+            double denominator = (k + 1) * (k + sqrtK);
+            
+            double term = numerator / denominator;
+            sum += term;
+            
+        }
+        
+        Console.WriteLine($"Сумма S({n}) = {sum:F10}");
+    }
+}
