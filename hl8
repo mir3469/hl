@@ -1,0 +1,47 @@
+Числа а и b выражают длины катетов одного прямоугольного треугольника, а с и d - другого. Узнать, являются ли треугольники подобными. Подобными называют треугольники, которые имеют одинаковую форму, но могут отличаться по размеру. Это значит, что один треугольник выглядит как увеличенная или уменьшенная копия другого.
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите длину первого катета a: ");
+        double a = double.Parse(Console.ReadLine());
+        
+        Console.Write("Введите длину второго катета b: ");
+        double b = double.Parse(Console.ReadLine());
+        
+        Console.Write("Введите длину первого катета c: ");
+        double c = double.Parse(Console.ReadLine());
+        
+        Console.Write("Введите длину второго катета d: ");
+        double d = double.Parse(Console.ReadLine());
+
+        if (a <= 0 || b <= 0 || c <= 0 || d <= 0)
+        {
+            Console.WriteLine("Длины катетов должны быть положительными числами!");
+            return;
+        }
+
+        double epsilon = 0.000001;
+        bool isSimilar = false;
+        
+        if (Math.Abs(a / b - c / d) < epsilon)
+        {
+            isSimilar = true;
+        }
+        else if (Math.Abs(a / b - d / c) < epsilon)
+        {
+            isSimilar = true;
+        }
+
+        if (isSimilar)
+        {
+            Console.WriteLine("Треугольники подобны.");
+        }
+        else
+        {
+            Console.WriteLine("Треугольники не подобны.");
+        }
+    }
+}
