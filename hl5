@@ -1,0 +1,40 @@
+Даны катеты прямоугольного треугольника. Найти его гипотенузу и площадь.
+c= √(a^2 + b^2)
+S = a*b
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите три числа:");
+        
+        Console.Write("x = ");
+        double x = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("y = ");
+        double y = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("z = ");
+        double z = Convert.ToDouble(Console.ReadLine());
+        
+        // Находим наименьшее число
+        double min;
+        
+        if (x <= y && x <= z)
+        {
+            min = x;
+        }
+        else if (y <= x && y <= z)
+        {
+            min = y;
+        }
+        else
+        {
+            min = z;
+        }
+        
+        Console.WriteLine("Наименьшее число: " + min);
+    }
+}
