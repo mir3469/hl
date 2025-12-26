@@ -1,0 +1,32 @@
+Найти площадь поверхности и объем куба, если известно, что длина его ребра равна а.
+S = 6a^2
+V = a^3
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        
+        Console.Write("Введите длину ребра куба (a): ");
+        string input = Console.ReadLine();
+        
+        
+        double a = Convert.ToDouble(input);
+        
+        
+        double S = 6 * Math.Pow(a, 2);
+        
+        
+        double V = Math.Pow(a, 3);
+        
+        
+        Console.WriteLine("Площадь поверхности куба: S = " + S);
+        Console.WriteLine("Объем куба: V = " + V);
+        
+        Console.ReadKey();
+    }
+}
